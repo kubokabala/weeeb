@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/menubar.css">
     <link rel="stylesheet" href="assets/css/mainstyle.css">
 </head>
+
 <body>
 
     <div class="header">
@@ -19,7 +21,7 @@
                 <h2><sup>12 менеджеров на одного разработчика == чистый профит</sup></h2>
             </div>
         </div>
-
+        
         <div class="menubar">
             <ul class="menu">
                 <li class="selected"><a href="#">Это я</a></li>
@@ -33,15 +35,19 @@
 
     <div class="main">
 
-
         <div class="success_header">
             <h1>Успехи</h1>
         </div>
+
         <div class="success">
             <h3>
                 <ul>
-                    <li><p>Младший разработчик в команде клиента iOS яндекс еды</p></li>
-                    <li><p>Покрасил 2 кнопки, а к одной даже action добавил</p></li>
+                    <li>
+                        <p>Младший разработчик в команде клиента iOS яндекс еды</p>
+                    </li>
+                    <li>
+                        <p>Покрасил 2 кнопки, а к одной даже action добавил</p>
+                    </li>
                 </ul>
             </h3>
         </div>
@@ -54,7 +60,6 @@
             <pre class="swift" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #B833A1;">class</span> AccessGetter<span style="color: black;">&lt;</span>Value<span style="color: black;">&gt;</span> <span style="color: black;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #B833A1;">private</span> <span style="color: #B833A1;">let</span> 🚽 = <span style="color: #6F41A7;">NSLock</span><span style="color: black;">&#40;</span><span style="color: black;">&#41;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #B833A1;">private</span> <span style="color: #B833A1;">var</span> value<span style="color: black;">:</span> Value</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #B833A1;">init</span><span style="color: black;">&#40;</span>_ value<span style="color: black;">:</span> Value<span style="color: black;">&#41;</span> <span style="color: black;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        <span style="color: #B833A1;">self</span>.<span style="color: #508187;">value</span> = value</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: black;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #B833A1;">func</span> addAction<span style="color: black;">&#40;</span>_ action<span style="color: black;">:</span> <span style="color: black;">&#40;</span>Value<span style="color: black;">&#41;</span> <span style="color: black;">-&gt;</span> <span style="color: #6F41A7;">Void</span><span style="color: black;">&#41;</span> <span style="color: black;">&#123;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        defer <span style="color: black;">&#123;</span> 🚽.🔐<span style="color: black;">&#40;</span><span style="color: black;">&#41;</span> <span style="color: black;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        🚽.🔒<span style="color: black;">&#40;</span><span style="color: black;">&#41;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        action<span style="color: black;">&#40;</span>value<span style="color: black;">&#41;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: black;">&#125;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: black;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #B833A1;">private</span> <span style="color: #B833A1;">extension</span> <span style="color: #6F41A7;">NSLock</span> <span style="color: black;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #B833A1;">func</span> 🔐<span style="color: black;">&#40;</span><span style="color: black;">&#41;</span> <span style="color: black;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        unlock<span style="color: black;">&#40;</span><span style="color: black;">&#41;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: black;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #B833A1;">func</span> 🔒<span style="color: black;">&#40;</span><span style="color: black;">&#41;</span> <span style="color: black;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        lock<span style="color: black;">&#40;</span><span style="color: black;">&#41;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: black;">&#125;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: black;">&#125;</span></div></li></ol>
             </pre>
         </div>
-
 
         <div class="animal_header">
             <h1>Мое тотемное животное</h1><br>
@@ -83,4 +88,5 @@
     </div>
 
 </body>
+
 </html>
