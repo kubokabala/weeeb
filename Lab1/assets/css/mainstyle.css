@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    text-align: center;
+    justify-content: center;
+    background-color: inherit;
+    height: auto;
+    font-size: 1em;
+    margin: auto;
+    min-width: 900px;
+}
+
+.code_header, .success_header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.code, .cow, .success, .animal {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.space {
+    white-space: pre;
+}
+
+.footer {
+    padding: 1px 0 0 0;
+    background-color: LightSteelBlue;
+    height: 55px;
+    font-size: 0.8em;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 900px;
+    font: normal 100% 'century gothic', arial, sans-serif;
+}
+
+.footer_text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 880px;
+    color: grey;
+    font-size: 0.9em;
+}
