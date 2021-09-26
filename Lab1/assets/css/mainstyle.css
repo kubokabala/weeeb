@@ -9,7 +9,7 @@
     background-color: inherit;
     height: auto;
     font-size: 1em;
-    margin: auto;
+    /* margin: auto; */
     /* min-width: 900px; */
 }
 
@@ -71,16 +71,21 @@ aside {
     word-break: break-all;   
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .verticale-wrapper {
     display: flex;
     flex-direction: column-reverse;
+    max-height: 100vh;
+    overflow: auto;
 }
 
 .element {
     /* background-color: red; */
     margin: 5px 10px 0 5px;
     /* padding: 5px; */
-
 }
 
 img {
