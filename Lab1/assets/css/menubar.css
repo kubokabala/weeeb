@@ -65,13 +65,15 @@ ul.menu li a {
     height: 20px;
     padding: 0px 35px 5px 28px;
     color: #fff;
-    text-decoration: none;
+    text-decoration: line-through;
 }
 
 ul.menu li.selected a {
     color: #aeb002;
+    text-decoration: none;
 }
 
 ul.menu li a:hover {
     color: #e4ec04;
 }
+
