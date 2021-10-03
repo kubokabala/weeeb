@@ -57,6 +57,8 @@
 
 
 .wrapper {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
 }
@@ -66,8 +68,7 @@
 }
 
 aside {
-    margin-left: auto;
-    margin-right: auto;
+   
     flex: 0 0 20%;
     background-color: aquamarine; 
     word-break: break-all;   
