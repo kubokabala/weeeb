@@ -9,7 +9,7 @@
     background-color: inherit;
     height: auto;
     font-size: 1em;
-    /* margin: auto; */
+    margin: auto;
     /* min-width: 900px; */
 }
 
@@ -65,6 +65,14 @@ aside {
     background-color: aquamarine;
     word-break: break-all;
 }
+@media screen and (max-width: 1000px) {
+    aside { display: none }
+    main { 
+        flex: 1 1 100%;
+        /*display: center;*/
+        background-color: aqua;
+    }
+  }
 
 ::-webkit-scrollbar {
     display: none;
