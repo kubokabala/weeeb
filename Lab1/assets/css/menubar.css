@@ -65,7 +65,7 @@ ul.menu li a {
     height: 20px;
     padding: 0px 35px 5px 28px;
     color: #fff;
-    text-decoration: line-through;
+    text-decoration: none;
 }
 
 ul.menu li.selected a {
