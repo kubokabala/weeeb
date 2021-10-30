@@ -65,7 +65,7 @@ aside {
     background-color: aquamarine;
     word-break: break-all;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
     aside { display: none }
     main { 
         flex: 1 1 100%;
@@ -109,3 +109,6 @@ img {
     text-decoration: underline;
 }
 
+li {
+    list-style-type: none;
+}
