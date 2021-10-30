@@ -33,10 +33,12 @@
 }
 
 .footer {
+    position: absolute;
     padding: 1px 0 0 0;
     background-color: LightSteelBlue;
     height: 55px;
     min-width: 900px;
+    width: 100%;
     font: normal 100% 'century gothic', arial, sans-serif;
 }
 
@@ -69,7 +71,6 @@ aside {
     aside { display: none }
     main { 
         flex: 1 1 100%;
-        /*display: center;*/
         background-color: aqua;
     }
   }
