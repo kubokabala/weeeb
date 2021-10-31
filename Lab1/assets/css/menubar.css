@@ -1,3 +1,5 @@
+/* + footer */
+
 * {
     margin: 0;
     padding: 0;
@@ -77,3 +79,24 @@ ul.menu li a:hover {
     color: #e4ec04;
 }
 
+
+/* ===============================footer is here =============================*/
+
+.footer {
+    position: absolute;
+    padding: 1px 0 0 0;
+    background-color: LightSteelBlue;
+    height: 55px;
+    min-width: 900px;
+    width: 100%;
+    font: normal 100% 'century gothic', arial, sans-serif;
+}
+
+.footer_text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 880px;
+    color: grey;
+    font-size: 0.9em;
+    font-weight: 400;
+}

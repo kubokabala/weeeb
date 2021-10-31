@@ -14,6 +14,11 @@
     text-align: center;
     background-color: lightgrey;
 }
-.container > .nechet{
+.container > .nechet {
     background-color: grey;
+}
+
+.container > #object {
+    background-color: #2F4F4F;
+    font-weight: bold;
 }
