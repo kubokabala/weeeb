@@ -26,11 +26,3 @@ function cleartids() {
 	window.clearTimeout(tid);
 }
 
-if(document.location.pathname=="/index.html"){
-    $("#li1").addClass("selected");
-    console.log("index");
-};
-if(document.location.pathname=="/content2.html"){
-    $("#li2").addClass("selected");
-    console.log("tablica");
-};
