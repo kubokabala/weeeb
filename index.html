@@ -10,9 +10,10 @@
     <meta name="keywords" content="Лёха, Горбунов, Алексей, M33041, код, успехи, олень, поставьте, сто, баллов">
     <link rel="stylesheet" href="Lab1/assets/css/menubar.css">
     <link rel="stylesheet" href="Lab1/assets/css/mainstyle.css">
+    <script src="Lab2\assets\scripts\script.js"></script>
 </head>
 
-<body>
+<body onload="start(document.forms[0])" onunload="cleartids()">
 
     <div class="header">
         <div class="logo">
@@ -24,11 +25,11 @@
 
         <nav class="menubar">
             <ul class="menu">
-                <li class="selected"><a href="index.html">Это я</a></li>
-                <li><a href="Lab2/content2.html">Таблица</a></li>
-                <li><a href="#">Тут потом</a></li>
-                <li><a href="#">Здесь тоже пусто</a></li>
-                <li><a href="#">Совсем пусто жесть</a></li>
+                <li id="li1"><a href="index.html">Это я</a></li>
+                <li id="li2"><a href="Lab2/content2.html">Таблица</a></li>
+                <li id="li3"><a href="#">Тут потом</a></li>
+                <li id="li4"><a href="#">Здесь тоже пусто</a></li>
+                <li id="li5"><a href="#">Совсем пусто жесть</a></li>
             </ul>
         </nav>
     </div>
@@ -36,8 +37,8 @@
     <div class="wrapper">
 
         <aside>
-            asfsagdg <br>
-            heput
+            Это пространство я<br>
+            когда-нибудь реализую
         </aside>
 
 
@@ -110,6 +111,22 @@
             <p>Дата публикации: <time pubdate datetime="2001-09-11"></time>11 сентября</p>
         </div>
     </div>
+
+    <script type="text/javascript">
+        (function() {
+            console.log("Hello world!")
+            var now = new Date();
+            startS = new Date(performance.timing.requestStart).getSeconds();
+            startMS = new Date(performance.timing.requestStart).getMilliseconds();
+            endS = now.getSeconds();
+            endMS = now.getMilliseconds();
+            res = Math.abs(endS*1000 + endMS - startS*1000 - startMS);
+            console.log(endS, endMS, startS, startMS)
+            var stats = document.createElement("p");
+            stats.textContent = "Page load time is " + res + " ms";
+            document.getElementsByClassName("footer_text")[0].appendChild(stats);
+        })();
+    </script>
 </body>
 
 </html>
