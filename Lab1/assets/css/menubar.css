@@ -5,14 +5,14 @@
     padding: 0;
 }
 
-.header {
+header {
     background-color: darkslateblue;
     height: 177px;
     font-size: 0.8em;
     min-width: 900px;
 }
 
-.header, .logo, .menubar, .footer {
+header, .logo, .menubar, .footer {
     margin-left: auto;
     margin-right: auto;
 }
@@ -82,7 +82,7 @@ ul.menu li a:hover {
 
 /* ===============================footer is here =============================*/
 
-.footer {
+footer {
     position: absolute;
     padding: 1px 0 0 0;
     background-color: LightSteelBlue;
