@@ -18,6 +18,6 @@ if(document.location.pathname=="/Lab2/content2.html"){
     console.log(endS, endMS, startS, startMS)
     var stats = document.createElement("p");
     stats.textContent = "Page load time is " + res + " ms";
-    document.getElementsByClassName("footer_text")[0].appendChild(stats);
+    document.getElementsByTagName("footer")[0].appendChild(stats);
 })();
       
