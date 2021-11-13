@@ -9,9 +9,10 @@
     background-color: inherit;
     height: auto;
     font-size: 1em;
-    margin: auto;
+    margin-inline: auto;
 }
 
+.main h2,
 .code_header,
 .success_header,
 .animal_header {
@@ -42,6 +43,7 @@
 }
 
 aside {
+    height: auto;
     scrollbar-width: none;
     flex: 0 0 20%;
     background-color: aquamarine;

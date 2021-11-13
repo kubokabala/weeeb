@@ -12,19 +12,15 @@ header {
     font-size: 0.8em;
     /* min-width: 900px; */
     justify-content: space-evenly;
-}
-
-header, .logo, .menubar, footer {
-    /* margin-left: auto; */
-    margin-right: auto;
-}
-
-.logo {
-    /* width: 880px; */
     padding-bottom: 15px;
 }
 
-.logo h1, .logo h2 {
+header, .menubar, footer {
+    margin-right: auto;
+}
+
+
+.logo_text h1, .logo_text h2 {
     font: normal 300% 'century gothic', arial, sans-serif;
     margin: 0 0 0 9px;
 }
@@ -49,12 +45,8 @@ header, .logo, .menubar, footer {
     color: #999;
 }
 
-.menubar {
-    /* padding-top: 15px; */
-    /* width: 900px; */
-    /* height: 46px; */
-    padding-bottom: 15px;
-
+.menu {
+    padding-top: 15px;
 }
 
 
@@ -68,7 +60,6 @@ ul.menu li {
 ul.menu li a {
     font: normal 100% 'trebuchet ms', sans-serif;
     display: block;
-    /* height: 20px; */
     padding: 0px 35px 5px 28px;
     color: #fff;
     text-decoration: none;
@@ -92,21 +83,9 @@ footer {
     position: absolute;
     padding: 1px 0 0 0;
     background-color: LightSteelBlue;
-    /* height: 70px; */
-    /* min-width: 900px; */
     width: 100%;
     font: normal 100% 'century gothic', arial, sans-serif;
     color: grey;
     font-size: 0.9em;
     font-weight: 400;
 }
-/* 
-.footer_text {
-    padding-left: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 880px; 
-    color: grey;
-    font-size: 0.9em;
-    font-weight: 400;
-} */
