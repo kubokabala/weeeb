@@ -6,3 +6,18 @@ if(document.location.pathname=="/Lab2/content2.html"){
     $("#li2").addClass("selected");
     console.log("tablica");
 };
+
+(function() {
+    console.log("Hello world!")
+    var now = new Date();
+    startS = new Date(performance.timing.requestStart).getSeconds();
+    startMS = new Date(performance.timing.requestStart).getMilliseconds();
+    endS = now.getSeconds();
+    endMS = now.getMilliseconds();
+    res = Math.abs(endS*1000 + endMS - startS*1000 - startMS);
+    console.log(endS, endMS, startS, startMS)
+    var stats = document.createElement("p");
+    stats.textContent = "Page load time is " + res + " ms";
+    document.getElementsByClassName("footer_text")[0].appendChild(stats);
+})();
+      
