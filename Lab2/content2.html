@@ -4,16 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Таблица</title>
-        <meta name="descriprion" content="Это таблица">
-        <meta name="keywords" content="Лёха, Горбунов, Алексей, M33041, таблица, зебра">
+        <title>Список</title>
+        <meta name="descriprion" content="Это Список">
+        <meta name="keywords" content="Лёха, Горбунов, Алексей, M33041, Список, рантайм">
         <link rel="stylesheet" href="../Lab1/assets/css/menubar.css">
         <link rel="stylesheet" href="../Lab2/assets/content2_style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <script src="assets\scripts\script.js"></script>
+        <script src="..\Lab2\assets\scripts\script.js"></script>
     </head>
 
-<body onload="start(document.forms[0])" onunload="cleartids()">
+<body onunload="cleartids()">
     <header>
         <div class="logo_text">
             <h1><a href="#">Я Лёха</a></h1>
@@ -23,7 +22,7 @@
         <ul class="menu">
             <li id="li1"><a type="menuPoint" name="index" href="../index.html">Это я</a></li>
             <li id="li2"><a type="menuPoint" name="content2" href="#">Таблица</a></li>
-            <li id="li"><a type="menuPoint" name="3menu" href="#">Тут потом</a></li>
+            <li id="li"><a type="menuPoint" name="interactiveList" href="../Lab5/interactiveList.html">Тут потом</a></li>
             <li id="li"><a type="menuPoint" name="4menu" href="#">Здесь тоже пусто</a></li>
             <li id="li"><a type="menuPoint" name="5menu" href="#">Совсем пусто жесть</a></li>
         </ul>
@@ -94,6 +93,6 @@
         <p>Дата публикации: <time pubdate datetime="2001-09-11"></time>11 сентября</p>
     </footer>
     
-    <script src="assets\scripts\menu.js"></script>
+    <script src="..\Lab2\assets\scripts\menu.js"></script>
 </body>
 </html>
