@@ -61,15 +61,6 @@ ul.menu li a {
     text-decoration: none;
 }
 
-ul.menu li.selected a {
-    color: #aeb002;
-    text-decoration: none;
-}
-
-ul.menu li a:hover {
-    color: #e4ec04;
-}
-
 /* ===============================footer is here =============================*/
 
 footer {

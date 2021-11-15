@@ -1,14 +1,24 @@
 var nowPageMenu = document.URL.split('/').at(-1).split('.')[0];
 console.log(nowPageMenu);
 
-if(document.location.pathname=="/index.html"){
-    $("#li1").addClass("selected");
-    console.log("index");
-};
-if(document.location.pathname=="/Lab2/content2.html"){
-    $("#li2").addClass("selected");
-    console.log("tablica");
-};
+window.onload = function() {
+    var element = document.getElementsByName(nowPageMenu);
+    if (element.length != 0) {
+        document.getElementsByName(nowPageMenu)[0].style.color = "Gold";
+    }
+}
+
+document.addEventListener("mouseout", function(event) {
+    if (event.target.type == "menuPoint" && event.target.getAttribute('name') != nowPageMenu) {
+        document.getElementsByName(event.target.name)[0].style.color = "";
+    }
+}, false);
+
+document.addEventListener("mouseover", function(event) {
+    if (event.target.type == "menuPoint" && event.target.getAttribute('name') != nowPageMenu) {
+        document.getElementsByName(event.target.name)[0].style.color = "yellow";
+    }
+}, false);
 
 (function() {
     console.log("Hello world!")
