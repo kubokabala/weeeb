@@ -1,3 +1,6 @@
+var nowPageMenu = document.URL.split('/').at(-1).split('.')[0];
+console.log(nowPageMenu);
+
 if(document.location.pathname=="/index.html"){
     $("#li1").addClass("selected");
     console.log("index");
