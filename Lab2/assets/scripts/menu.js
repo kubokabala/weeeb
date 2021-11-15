@@ -1,21 +1,21 @@
-var nowPageMenu = document.URL.split('/').at(-1).split('.')[0];
-console.log(nowPageMenu);
+var activePage = document.URL.split('/').at(-1).split('.')[0];
+console.log(activePage);
 
 window.onload = function() {
-    var element = document.getElementsByName(nowPageMenu);
+    var element = document.getElementsByName(activePage);
     if (element.length != 0) {
-        document.getElementsByName(nowPageMenu)[0].style.color = "Gold";
+        document.getElementsByName(activePage)[0].style.color = "Gold";
     }
 }
 
 document.addEventListener("mouseout", function(event) {
-    if (event.target.type == "menuPoint" && event.target.getAttribute('name') != nowPageMenu) {
+    if (event.target.type == "menuPoint" && event.target.getAttribute('name') != activePage) {
         document.getElementsByName(event.target.name)[0].style.color = "";
     }
 }, false);
 
 document.addEventListener("mouseover", function(event) {
-    if (event.target.type == "menuPoint" && event.target.getAttribute('name') != nowPageMenu) {
+    if (event.target.type == "menuPoint" && event.target.getAttribute('name') != activePage) {
         document.getElementsByName(event.target.name)[0].style.color = "yellow";
     }
 }, false);
