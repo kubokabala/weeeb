@@ -11,17 +11,14 @@ main {
     margin-inline: auto;
 }
 
-main h2,
-.code_header,
-.success_header,
-.animal_header {
+section h2 {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-.swift,
-.success,
-.animal {
+section .swift,
+section .success,
+section .animal {
     display: flex;
     justify-content: center;
     text-align: left;
