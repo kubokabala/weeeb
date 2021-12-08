@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.main {
+main {
     text-align: center;
     justify-content: center;
     height: auto;
@@ -11,7 +11,7 @@
     margin-inline: auto;
 }
 
-.main h2,
+main h2,
 .code_header,
 .success_header,
 .animal_header {
@@ -37,7 +37,7 @@
     flex-direction: row;
 }
 
-.main {
+main {
     flex: 0 0 60%;
 }
 
