@@ -1,5 +1,4 @@
 let activePage = document.URL.split('/').at(-1).split('.')[0];
-console.log(activePage);
 
 window.onload = function() {
     let element = document.getElementsByName(activePage);
@@ -28,7 +27,6 @@ document.addEventListener("mouseover", function(event) {
     endS = now.getSeconds();
     endMS = now.getMilliseconds();
     res = Math.abs(endS*1000 + endMS - startS*1000 - startMS);
-    console.log(endS, endMS, startS, startMS)
     var stats = document.createElement("p");
     stats.textContent = "Page load time is " + res + " ms";
     document.getElementsByTagName("footer")[0].appendChild(stats);
