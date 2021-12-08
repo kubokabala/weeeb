@@ -1,30 +1,62 @@
 .main {
-    display: grid; 
+    /* display: grid;  */
     padding: 2px; 
     background-color: pink;
 }
 
 table {
+    display: grid;
     text-align: center;
+    grid-template-rows: repeat(3, auto);
+}
+caption {
+    grid-column: span 5;
+    grid-row: span 1;
+    display: grid;
+}
+table thead {
+    grid-row: span 1;
+    grid-column: span 5;
+    display: grid;
+    
+}
+table thead tr {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+table thead tr th {
+    grid-column: span 1;
+}
+/* ========================== */
+table tbody {
+    grid-column: span 5;
+    grid-row: span 1;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+} 
+table tbody tr {
+    grid-row: span 5;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+table tbody tr td {
+    display: flex;
+    margin-left: 10px;
+    grid-column: span 1;
 }
 
-table td:first-child, tr:first-child {
+table tr:first-child {
     background-color: #2F4F4F;
 }
 
-thead :last-child {
-    width: 10%;
-}
-
-/* Нечетные строки */
 table tbody tr:nth-child(odd){
 	background: #fff;
 }
  
-/* Четные строки */
+
 table tbody tr:nth-child(even){
 	background: #F7F7F7;
 }
 
-table tr { line-height: 40px; }
+table tr { line-height: 40px; }  
 
