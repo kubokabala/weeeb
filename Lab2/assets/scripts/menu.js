@@ -1,8 +1,8 @@
-var activePage = document.URL.split('/').at(-1).split('.')[0];
+let activePage = document.URL.split('/').at(-1).split('.')[0];
 console.log(activePage);
 
 window.onload = function() {
-    var element = document.getElementsByName(activePage);
+    let element = document.getElementsByName(activePage);
     if (element.length != 0) {
         document.getElementsByName(activePage)[0].style.color = "Gold";
     }
@@ -22,7 +22,7 @@ document.addEventListener("mouseover", function(event) {
 
 (function() {
     console.log("Hello world!")
-    var now = new Date();
+    let now = new Date();
     startS = new Date(performance.timing.requestStart).getSeconds();
     startMS = new Date(performance.timing.requestStart).getMilliseconds();
     endS = now.getSeconds();

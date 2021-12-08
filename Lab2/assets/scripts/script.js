@@ -2,9 +2,9 @@ timestr = "00:00:00";
 title = document.title;
 tid = 0;
 pause = 0;
-var to;
-var bcount;
-var tcount;
+let to;
+let bcount;
+let tcount;
 
 function time(n) {
 	tid = window.setTimeout("time(1)", to);
