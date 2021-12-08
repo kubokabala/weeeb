@@ -38,6 +38,7 @@ table tbody tr {
     grid-row: span 5;
     display: grid;
     grid-template-columns: repeat(5, 20%);
+    margin: 1px;
 }
 table tbody tr td {
     display: flex;
